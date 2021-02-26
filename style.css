@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images/bg-pattern-top.svg);
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-color: aliceblue;
+}
+
+em{
+    font-weight: bold;
+    color: black;
+}
+
+*{
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+p{
+    color: hsl(227, 10%, 46%);;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    animation: loader 4s;
+}
+
+.profil{
+    animation: loader 4s;
+    transition-timing-function: ease-in-out;
+    border-radius: 4%;
+    width: 370px;
+    margin: auto;
+    margin-top: 17%;
+    background-color: white;
+    position: relative;
+}
+
+.banniere{
+width: 100%;
+border-top-left-radius: 4%;
+border-top-right-radius: 4%;
+}
+
+.photo{
+    position: absolute;
+    left: 36%;
+    top: 24%;
+    border-radius: 48%;
+    border: 5px solid white;
+}
+
+.profil-info{
+    border-bottom: 1px solid lightgray;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.profil-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@keyframes loader{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
